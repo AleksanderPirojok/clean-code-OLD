@@ -5,42 +5,43 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.about {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.image {
   width: 100%;
 }
 
-.aaa .more-inf {
+.link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
-  .aaa {
+  .about {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.work-space {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.task__input,
+.task__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.task {
   display: flex;
 }
 
@@ -50,7 +51,7 @@ ul {
 }
 
 li,
-h3 {
+h2 {
   list-style: none;
 }
 
@@ -59,7 +60,7 @@ button {
   outline: none;
 }
 
-button {
+.task__button {
   background: none;
   border: 0px;
   color: #888;
@@ -69,12 +70,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.task__button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-h3 {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -110,7 +111,6 @@ li {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -134,13 +134,13 @@ li > input[type="text"] {
   width: 226px;
 }
 
-button.delete img {
+button.task__button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+button.task__button_delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -155,11 +155,11 @@ ul li input[type="text"] {
   display: none;
 }
 
-ul li.edit-mode input[type="text"] {
+ul li.task__edit-mode input[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.edit-mode label {
+ul li.task__edit-mode label {
   display: none;
 }
